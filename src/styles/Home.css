@@ -1,6 +1,10 @@
 .header {
-  background-image: url(/images/1.jpg);
+  background-image: url("/images/1.jpg");
   padding: 12.5rem 4rem;
+}
+
+h2 {
+  text-align: center;
 }
 
 .content {
@@ -32,18 +36,108 @@
   margin: auto;
 }
 
-p {
-  text-align: center;
+.balance {
+  display: 0 block;
+}
+
+.filter {
+  display: inline-flex;
+  margin-top: 15px;
+  margin-left: 38.5%;
+  
+}
+
+.button1 {
+  background-color: #e24848;
+  margin: 0 auto;
+  display: block;
+  width: 200px;
+  height: 50px;
+  text-transform: uppercase;
+  border-radius: 20px;
+  border: 3px solid black;
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.button1:hover {
+  background-color: rgb(247, 144, 144);
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+}
+
+.button2 {
+  background-color: #e24848;
+  margin: 0 auto;
+  display: block;
+  width: 200px;
+  height: 50px;
+  text-transform: uppercase;
+  border-radius: 20px;
+  border: 3px solid black;
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.button2:hover {
+  background-color: rgb(247, 144, 144);
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+}
+
+.button3 {
+  background-color: #e24848;
+  margin: 0 auto;
+  display: block;
+  width: 150px;
+  height: 50px;
+  text-transform: uppercase;
+  border-radius: 20px;
+  border: 3px solid black;
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.button3:hover {
+  background-color: rgb(247, 144, 144);
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
 }
 
 .column {
-  float: left;
-  width: 33.33%;
+  background-color: #e24848;
+  border-color: aliceblue;
+  border: 5px solid black;
+  border-radius: 20px;
+  text-align: center;
+  display: inline-table;
+  width: 30%;
+  line-height: 200px;
+  margin: 25px;
+  padding-bottom: 15px;
 }
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+.img {
+  width: 200px;
+}
+
+/* Responsive columns - one column layout (vertical) on medium screens */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
 }
