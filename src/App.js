@@ -1,12 +1,12 @@
 import { ConnectWallet } from "@thirdweb-dev/react";
 import "./styles/Home.css";
 import React from 'react';
-import Image1 from './images/sr8.png'
-import Image2 from './images/sr9.png'
-import Image3 from './images/sr15.png'
-import Image4 from './images/TM16.png'
-import Image5 from './images/TM24.png'
-import Image6 from './images/TM52.png'
+import Image1 from '/images/sr8.png'
+import Image2 from '/images/sr9.png'
+import Image3 from '/images/sr15.png'
+import Image4 from '/images/TM16.png'
+import Image5 from '/images/TM24.png'
+import Image6 from '/images/TM52.png'
 
 
 
