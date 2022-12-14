@@ -1,32 +1,12 @@
 import { ConnectWallet } from "@thirdweb-dev/react";
 import "./styles/Home.css";
 import React from 'react';
-import Image1 from '/images/sr8.png'
-import Image2 from '/images/sr9.png'
-import Image3 from '/images/sr15.png'
-import Image4 from '/images/TM16.png'
-import Image5 from '/images/TM24.png'
-import Image6 from '/images/TM52.png'
-
-
-
-// const Moralis = require('moralis').default;
-// const {EvmChain} = require('@moralisweb3/evm-utils');
-// const runApp = async () => {
-//   await Moralis.start ({
-//     apiKey: "LlKhkUaynkWzQL50B8IU2KwJSDyDn237DKX95kXSlSP92bdC94S71sAmD4G9H7i6",
-//     });
-
-//     const address = '0xd8da6bf26964af9d7eed9e03e53415d37aa96045';
-//     const chain = EvmChain.ETHEREUM;
-//     const response = await Moralis.EvmApi.token.getWalletTokenBalances({
-//       address,
-//       chain,
-//     });
-
-//     console.log(response.toJSON());
-// }
-// runApp();
+import Image1 from './/images/sr8.png'
+import Image2 from './/images/sr9.png'
+import Image3 from './/images/sr15.png'
+import Image4 from './/images/TM16.png'
+import Image5 from './/images/TM24.png'
+import Image6 from './/images/TM52.png'
 
 export default function Home() {
   return (
@@ -40,46 +20,123 @@ export default function Home() {
       </div></><hr></hr></><div className="balance">
         <h2> You have 5001.07 $TOYS </h2>
         <button class="button button1">View cart</button>
-        <div className="filter">
-          <button class="button button3">Raffles</button>
-          <button class="button button3">Whitelist</button>
-          <button class="button button3">NFTs</button>
+        <div class="dropdown">
+          <button class="button button1">Sort by:</button>
+          <div class="dropdown-content">
+            <a href="#">Raffle</a>
+            <a href="#">Whitelist</a>
+            <a href="#">NFT</a>
+          </div>
         </div>
       </div></><div class="row">
         <div class="column">
-        <img src={Image1}  height={500} width={570}></img>
-          <h2>Column 1</h2>
-          <p>Some text..</p>
+        <img src={Image1} class="img" height={350} width={350}></img>
+          <h2>Raffle</h2>
+          <h2>SpaceRider #6969</h2>
+          <hr></hr>
+          <h2>Max per wallet: 5</h2>
+          <h2>Max avalible: 300</h2>
+          <h2>Expires 12/20/2022</h2>
+          <h2>4/300 Sold</h2>
           <button class="button button2">Add to cart</button>
         </div>
         <div class="column">
-        <img src={Image5}  height={500} width={570}></img>
-          <h2>Column 2</h2>
-          <p>Some text..</p>
+        <img src={Image5} class="img" height={350} width={350}></img>
+          <h2>Raffle</h2>
+          <h2>ToyMorie #1230</h2>       
+          <hr></hr>
+          <h2>Max per wallet: 5</h2>
+          <h2>Max avalible: 300</h2>
+          <h2>Expires 12/20/2022</h2>
+          <h2>4/300 Sold</h2>
           <button class="button button2">Add to cart</button>
         </div>
         <div class="column">
-        <img src={Image3}  height={500} width={570}></img>
-          <h2>Column 3</h2>
-          <p>Some text..</p>
+        <img src={Image3} class="img" height={350} width={350}></img>
+          <h2>Raffle</h2>
+          <h2>SpaceRider #4200</h2>
+          <hr></hr>
+          <h2>Max per wallet: 5</h2>
+          <h2>Max avalible: 300</h2>
+          <h2>Expires 12/20/2022</h2>
+          <h2>4/300 Sold</h2>
           <button class="button button2">Add to cart</button>
         </div>
         <div class="column">
-        <img src={Image4}  height={500} width={570}></img>
-          <h2>Column 4</h2>
-          <p>Some text..</p>
+        <img src={Image4} class="img" height={350} width={350}></img>
+          <h2>Raffle</h2>
+          <h2>ToyMorie #1230</h2>
+          <hr></hr>
+          <h2>Max per wallet: 5</h2>
+          <h2>Max avalible: 300</h2>
+          <h2>Expires 12/20/2022</h2>
+          <h2>4/300 Sold</h2>
           <button class="button button2">Add to cart</button>
         </div>
         <div class="column">
-        <img src={Image2}  height={500} width={570}></img>
-          <h2>Column 5</h2>
-          <p>Some text..</p>
+        <img src={Image2} class="img" height={350} width={350}></img>
+          <h2>Raffle</h2>
+          <h2>SpaceRider #4848</h2>
+          <hr></hr>
+          <h2>Max per wallet: 5</h2>
+          <h2>Max avalible: 300</h2>
+          <h2>Expires 12/20/2022</h2>
+          <h2>4/300 Sold</h2>
           <button class="button button2">Add to cart</button>
         </div>
         <div class="column">
-        <img src={Image6}  height={500} width={570}></img>
-          <h2>Column 6</h2>
-          <p>Some text..</p>
+        <img src={Image6} class="img" height={350} width={350}></img>
+          <h2>Raffle</h2>
+          <h2>ToyMorie #1230</h2>
+          <hr></hr>
+          <h2>Max per wallet: 5</h2>
+          <h2>Max avalible: 300</h2>
+          <h2>Expires 12/20/2022</h2>
+          <h2>4/300 Sold</h2>
+          <button class="button button2">Add to cart</button>
+        </div>
+        <div class="column">
+        <img src={Image6} class="img" height={350} width={350}></img>
+          <h2>Raffle</h2>
+          <h2>ToyMorie #1230</h2>
+          <hr></hr>
+          <h2>Max per wallet: 5</h2>
+          <h2>Max avalible: 300</h2>
+          <h2>Expires 12/20/2022</h2>
+          <h2>4/300 Sold</h2>
+          <button class="button button2">Add to cart</button>
+        </div>
+        <div class="column">
+        <img src={Image6} class="img" height={350} width={350}></img>
+          <h2>Raffle</h2>
+          <h2>ToyMorie #1230</h2>
+          <hr></hr>
+          <h2>Max per wallet: 5</h2>
+          <h2>Max avalible: 300</h2>
+          <h2>Expires 12/20/2022</h2>
+          <h2>4/300 Sold</h2>
+          <button class="button button2">Add to cart</button>
+        </div>
+        <div class="column">
+        <img src={Image6} class="img" height={350} width={350}></img>
+          <h2>Raffle</h2>
+          <h2>ToyMorie #1230</h2>
+          <hr></hr>
+          <h2>Max per wallet: 5</h2>
+          <h2>Max avalible: 300</h2>
+          <h2>Expires 12/20/2022</h2>
+          <h2>4/300 Sold</h2>
+          <button class="button button2">Add to cart</button>
+        </div>
+        <div class="column">
+        <img src={Image6} class="img" height={350} width={350}></img>
+          <h2>Raffle</h2>
+          <h2>ToyMorie #1230</h2>
+          <hr></hr>
+          <h2>Max per wallet: 5</h2>
+          <h2>Max avalible: 300</h2>
+          <h2>Expires 12/20/2022</h2>
+          <h2>4/300 Sold</h2>
           <button class="button button2">Add to cart</button>
         </div>
       </div></>
