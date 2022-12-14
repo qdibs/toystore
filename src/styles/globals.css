@@ -6,6 +6,10 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+hr {
+  color: black;
+}
+
 a {
   color: #7dd3fc;
   text-decoration: none;
@@ -17,5 +21,5 @@ a {
 
 body {
   color: #e7e8e8;
-  background: #0f1318;
+  background: #7b9cc4;
 }
